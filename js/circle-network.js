@@ -117,8 +117,8 @@ function draw() {
     if (circleExp < circleExpMin || circleExp > circleExpMax) circleExpSp *= -1;
     circleExp += circleExpSp;
   }
-  var ctxfr = document.getElementById('canvas-network').getContext('2d');
-  var ctxbg = document.getElementById('canvasbg-network').getContext('2d');
+  var ctxfr = document.getElementById('canvasnetwork').getContext('2d');
+  var ctxbg = document.getElementById('canvasbgnetwork').getContext('2d');
 
   ctxfr.globalCompositeOperation = 'destination-over';
   ctxfr.clearRect(0, 0, canvas.width, canvas.height); // clear canvas
