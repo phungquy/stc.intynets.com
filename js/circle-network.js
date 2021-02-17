@@ -1,3 +1,5 @@
+var canvas = document.getElementById('canvas-network'),
+    canvasbg = document.getElementById('canvasbg-network')
 // min and max radius, radius threshold and percentage of filled circles
 var radMin = 5,
   radMax = 125,
@@ -117,8 +119,8 @@ function draw() {
     if (circleExp < circleExpMin || circleExp > circleExpMax) circleExpSp *= -1;
     circleExp += circleExpSp;
   }
-  var ctxfr = document.getElementById('canvasnetwork').getContext('2d');
-  var ctxbg = document.getElementById('canvasbgnetwork').getContext('2d');
+  var ctxfr = canvas.getContext('2d');
+  var ctxbg = canvasbg.getContext('2d');
 
   ctxfr.globalCompositeOperation = 'destination-over';
   ctxfr.clearRect(0, 0, canvas.width, canvas.height); // clear canvas
@@ -179,9 +181,3 @@ function draw() {
 }
 
 init_();
-
-/*Credits and aknowledgements:
-Original Idea and Design by Luca Luzzatti
-
-Optimizing tips from Benjamin Kästner
-General tips from Salvatore Previti*/
