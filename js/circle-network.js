@@ -106,7 +106,7 @@ function drawCircle(ctx, circle) {
 }
 
 //initializing function
-function init() {
+function init_() {
   window.requestAnimationFrame(draw);
 }
 
@@ -178,7 +178,7 @@ function draw() {
   window.requestAnimationFrame(draw);
 }
 
-init();
+init_();
 
 /*Credits and aknowledgements:
 Original Idea and Design by Luca Luzzatti
