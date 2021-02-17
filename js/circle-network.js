@@ -17,7 +17,7 @@ var maxOpacity = 0.6;
 //default palette choice
 var colors = ['52,168,83', '117,95,147', '199,108,23', '194,62,55', '0,172,212', '120,120,120'],
   bgColors = ['52,168,83', '117,95,147', '199,108,23', '194,62,55', '0,172,212', '120,120,120'],
-  circleBorder = 10,
+  circleBorder = 15,
   backgroundLine = bgColors[0];
 var backgroundMlt = 0.85;
 
@@ -39,7 +39,7 @@ var circleExp = 1,
   circleExpMax = 1.003,
   circleExpMin = 0.997,
   circleExpSp = 0.00004,
-  circlePulse = false;
+  circlePulse = true;
 
 //circle class
 function Circle(background) {
