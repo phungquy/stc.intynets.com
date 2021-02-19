@@ -3,8 +3,8 @@ var canvas = document.getElementById('canvas-network'),
 // min and max radius, radius threshold and percentage of filled circles
 var radMin = 5,
   radMax = 125,
-  filledCircle = 50, //percentage of filled circles
-  concentricCircle = 25, //percentage of concentric circles
+  filledCircle = 60, //percentage of filled circles
+  concentricCircle = 35, //percentage of concentric circles
   radThreshold = 25; //IFF special, over this radius concentric, otherwise filled
 
 //min and max speed to move
@@ -26,7 +26,7 @@ var linkDist = Math.min(canvas.width, canvas.height) / 2.4,
   lineBorder = 2.5;
 
 //most importantly: number of overall circles and arrays containing them
-var maxCircles = 30,
+var maxCircles = 25,
   points = [],
   pointsBack = [];
 
