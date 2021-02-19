@@ -3,8 +3,8 @@ var canvas = document.getElementById('canvas-network'),
 // min and max radius, radius threshold and percentage of filled circles
 var radMin = 5,
   radMax = 125,
-  filledCircle = 60, //percentage of filled circles
-  concentricCircle = 30, //percentage of concentric circles
+  filledCircle = 80, //percentage of filled circles
+  concentricCircle = 40, //percentage of concentric circles
   radThreshold = 25; //IFF special, over this radius concentric, otherwise filled
 
 //min and max speed to move
@@ -12,7 +12,7 @@ var speedMin = 0.3,
   speedMax = 4;
 
 //max reachable opacity for every circle and blur effect
-var maxOpacity = 0.6;
+var maxOpacity = 0.8;
 
 //default palette choice
 var colors = ['52,168,83', '117,95,147', '199,108,23', '194,62,55', '0,172,212', '120,120,120', '255,235,59', '233,30,99'],
